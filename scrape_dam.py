@@ -55,7 +55,7 @@ current_data_df = pd.DataFrame(data, columns=headers)
 
 current_date = datetime.now().date()
 current_date_str = current_date.strftime('%Y-%m-%d')
-current_data_df.to_csv(f'dam_info_{current_date_str}.csv', index=False,)
+current_data_df.to_csv(f'dam_info_{current_date_str}.csv', index=False)
 
 
 
