@@ -2,7 +2,7 @@ name: Scrape Dam Information Workflow
 
 on:
   schedule:
-    # Runs at 6 AM UTC every day. Change this to your preferred time.
+    # Runs at 7 AM UTC every day. Change this to your preferred time.
     - cron: '0 23 * * *'
   workflow_dispatch:
 
