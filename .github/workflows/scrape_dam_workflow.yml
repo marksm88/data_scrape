@@ -1,0 +1,30 @@
+name: Scrape Dam Information Workflow
+
+on:
+  schedule:
+    # Runs at 6 AM UTC every day. Change this to your preferred time.
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'  # Use the Python version you need for your project.
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Run the scrape script
+      run: python scrape_dam.py
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git commit -m "Update data" -a || echo "No changes to commit"
+        git push
