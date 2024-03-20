@@ -2,8 +2,8 @@ name: Scrape Dam Information Workflow
 
 on:
   schedule:
-    # Runs at 10:00 AM PH standard time every day.
-    - cron: '40 2 * * *'
+    # Runs at 80:00 AM PH standard time every day.
+    - cron: '00 0 * * *'  # 12 am UTC
   # workflow_dispatch: # uncomment to run manual version
 
 jobs:
