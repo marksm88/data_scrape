@@ -2,7 +2,7 @@ name: Scrape Dam Information Workflow
 
 on:
   schedule:
-    # Runs at 8 AM PH standard time every day.
+    # Runs at 9 AM PH standard time every day.
     - cron: '0 1 * * *'
   workflow_dispatch:
 
@@ -15,7 +15,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'  # Use the Python version you need for your project.
+        python-version: '3.8'  
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
