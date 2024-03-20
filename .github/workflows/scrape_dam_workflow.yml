@@ -4,8 +4,7 @@ on:
   schedule:
     # Runs at 10:00 AM PH standard time every day.
     - cron: '0 2 * * *'
-    - timezone: 'Asia/Manila'
-  workflow_dispatch:
+  # workflow_dispatch: # uncomment to run manual version
 
 jobs:
   build:
