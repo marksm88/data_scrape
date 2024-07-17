@@ -71,8 +71,6 @@ current_r = sqldf(current_q, globals())
 
 
 df1 = pd.read_csv('Data Dam Info - Final.csv')
-df1['Observation Date'] = pd.to_datetime(df1['Observation Date'], format='%m/%d/%Y', errors='coerce')
-df1.loc[pd.isnull(df1['Observation Date']), 'Observation Date'] = pd.to_datetime(df1.loc[pd.isnull(df1['Observation Date']), 'Observation Date'], format='%Y-%m-%d', errors='coerce')
 
 final_df = pd.concat([df1, current_r], ignore_index=True).drop_duplicates()
 
