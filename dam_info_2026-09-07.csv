@@ -1,0 +1,10 @@
+Dam Name,Observation Date,Reservoir Water Level (RWL) (m),Water Level Deviation - Hr,Water Level Deviation - Amount,Normal High Water Level (NHWL) (m),Deviation from NHWL (m),Rule Curve Elevation (m),Deviation from Rule Curve (m),Gates,Meters,Inflow,Outflow
+Angat,2026-09-07,206.30,24,0.49,210.00,-3.70,184.04,22.26,,,,
+Ipo,2026-09-07,99.81,24,-0.59,101.10,-1.29,0.00,0.00,,,,
+La Mesa,2026-09-07,78.13,24,-0.19,80.15,-2.02,0.00,0.00,,,,
+Ambuklao,2026-09-07,751.41,24,0.08,752.00,-0.59,745.00,6.41,2,1.00,,194.94
+Binga,2026-09-07,573.90,24,0.50,575.00,-1.10,565.00,8.90,2,1.00,,218.16
+San Roque,2026-09-07,279.46,24,-2.62,280.00,-0.54,256.70,22.76,2,2.50,,742.47
+Pantabangan,2026-09-07,197.61,24,0.36,218.50,-20.89,213.38,-15.77,,,,
+Magat Dam,2026-09-07,181.32,24,0.08,190.00,-8.68,183.32,-2.00,,,,
+Caliraya,2026-09-07,287.11,24,0.32,0.00,0.00,0.00,0.00,,,,
